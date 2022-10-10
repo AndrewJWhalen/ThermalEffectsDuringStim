@@ -1,3 +1,6 @@
+mkdir('plots')
+mkdir('results')
+
 addpath('functions/')
 addpath('classes/')
 addpath('init/')
