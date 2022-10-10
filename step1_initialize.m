@@ -1,5 +1,6 @@
 addpath('functions/')
 addpath('classes/')
+addpath('init/')
 load('init/init_wei.mat')
 Voli = 1.4368e-15; 
 Volo = Voli/7;

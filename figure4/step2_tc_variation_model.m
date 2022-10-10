@@ -1,6 +1,6 @@
 addpath('../classes/')
 load('../init/leak.mat')
-addpath(leak.function_path)
+addpath('../functions/')
 
 
 init = leak.init;
@@ -37,6 +37,6 @@ parfor i = 1:4
     pt_cell(i,:) = pt_send;
 end
 
-save('../results/tc_variation.mat','pt_cell')
+save('../results/tc_variation.mat','pt_cell','-v7.3')
 
 

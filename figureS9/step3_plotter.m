@@ -1,3 +1,8 @@
+%%%
+% Requires running figure 3 step 3 first to generate simulation file.
+% Requires Symbolic Math Toolbox
+%%%
+
 load('../results/instant_pump.mat')
 profile_0 = p_list{1}(:,5*10000);
 xnstep = 10;

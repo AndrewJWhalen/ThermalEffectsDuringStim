@@ -1,6 +1,6 @@
 addpath('../classes/')
 load('../init/leak.mat')
-addpath(leak.function_path)
+addpath('../functions/')
 
 
 %% run leak

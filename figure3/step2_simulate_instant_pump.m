@@ -1,6 +1,7 @@
 addpath('../classes/')
+addpath('../results/')
 load('../init/leak.mat')
-addpath(leak.function_path)
+addpath('../functions/')
 
 tc = 1;
 init = leak.init;
