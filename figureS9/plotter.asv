@@ -1,0 +1,25 @@
+load('../results/instant_pump.mat')
+profile_0 = p_list{1}(:,5*10000);
+xnstep = 10;
+ynstep = 10;
+
+
+for point = [1,3]
+    switch point
+        case 1
+            [vset,mnhset]=meshgrid(linspace(-65,-58,xnstep),linspace(0.00,0.15,ynstep));
+            [v0list, neq, meq, heq, ~, ~] = equilibrium(profile_0);
+        case 3
+            [vset,mnhset]=meshgrid(linspace(-42,-40,xnstep),linspace(0.52,0.57,ynstep));
+            [v0list, neq, meq, heq, ~, ~] = equilibrium_solve(profile_0);
+    end
+    
+    subplot(3,2,1+fix(point/2))
+    fieldmap_n_vsolve
+
+
+end
+
+set(figure(1),'Units','inches')
+set(figure(1),'PaperSize',[3 3])
+print(figure(1),'-fillpage','/gpfs/scratch/tuk158/n1_onset','-dpdf')
