@@ -1,5 +1,5 @@
-load('results/tc_variation.mat')
-addpath('graphing_functions/')
+load('../results/tc_variation.mat')
+addpath('../graphing_functions/')
 
 fig=figure;
 c = 'rgbm';

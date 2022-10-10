@@ -1,5 +1,5 @@
-load('results/na_l_sweep.mat')
-addpath('graphing_functions/')
+load('../results/na_l_sweep.mat')
+addpath('../graphing_functions/')
 
 xt = 0:0.1/1000:5;
 
@@ -14,4 +14,4 @@ end
 
 set(figure(1),'Units','inches')
 set(figure(1),'PaperSize',[4 4])
-print('-fillpage','plots/leak_sweep','-dpdf')
+print('-fillpage','../plots/leak_sweep','-dpdf')

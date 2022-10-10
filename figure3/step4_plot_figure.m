@@ -1,8 +1,8 @@
-addpath('classes/')
+addpath('../classes/')
 f1 =figure;
 
-fast = load('results/instant_pump.mat');
-slow = load('results/5tc_all.mat');
+fast = load('../results/instant_pump.mat');
+slow = load('../results/5tc_all.mat');
 
 %% v
 subplot(3,4,2)
@@ -31,7 +31,7 @@ ylabel({'Normalized','Pump Current'})
 
 %% vdot instant
 
-addpath('functions/dotvmapping')
+addpath('../functions/dotvmapping')
 
 param = ones(10,1);
 param(8) = 1.5;
@@ -198,4 +198,4 @@ set(f1,'Units','centimeters')
 set(f1,'PaperSize',[18 14])
 
 
-print('-fillpage','plots/figure3','-dpdf')
+print('-fillpage','../plots/figure3','-dpdf')

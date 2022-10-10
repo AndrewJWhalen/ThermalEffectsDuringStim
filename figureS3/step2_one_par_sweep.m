@@ -1,6 +1,6 @@
-addpath('classes/')
-load('init/leak.mat')
-addpath(leak.function_path)
+addpath('../classes/')
+load('../init/leak.mat')
+addpath('../functions/')
 
 
 %% run leak
@@ -44,7 +44,7 @@ end
 
 
 
-save('results/one_par_sweep.mat','pt_cell')
+save('../results/one_par_sweep.mat','pt_cell')
 
     
 

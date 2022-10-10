@@ -1,5 +1,5 @@
-load('results/one_par_sweep.mat')
-addpath('graphing_functions/')
+load('../results/one_par_sweep.mat')
+addpath('../graphing_functions/')
 
 xt = 0:0.1/1000:120;
 ymax = [20,30,60];
@@ -47,4 +47,4 @@ for i = 1:12
     subplot(6,2,i)
     ylim([ymin ymax])
 end
-    print('-fillpage','plots/one_par_plot','-dpdf')
+    print('-fillpage','../plots/one_par_plot','-dpdf')

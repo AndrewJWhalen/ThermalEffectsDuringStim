@@ -1,6 +1,6 @@
-addpath('classes/')
-load('init/leak.mat')
-addpath(leak.function_path)
+addpath('../classes/')
+load('../init/leak.mat')
+addpath('../functions/')
 
 
 init = leak.init;
@@ -33,6 +33,6 @@ p_0 = pt1(:,end);
 pt_cell_all={pt1,pt2};
 ct_cell_all = {ct1,ct2};
 
-save('results/5tc_all.mat','pt_cell_all','ct_cell_all')
+save('../results/5tc_all.mat','pt_cell_all','ct_cell_all')
 
 
