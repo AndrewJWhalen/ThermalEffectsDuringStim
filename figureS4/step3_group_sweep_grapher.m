@@ -1,5 +1,5 @@
-load('../results/group_par_sweep.mat')
-addpath('../graphing_functions/')
+load('results/group_par_sweep.mat')
+addpath('graphing_functions/')
 
 %% freq plots
 xt = 0:0.1/1000:120;
@@ -51,5 +51,5 @@ ylabel('Frequency (Hz)')
 
 set(figure(1),'Units','inches')
 set(figure(1),'PaperSize',[7 9.5])
-print('-fillpage','../plots/group_sweeps','-dpdf')
+print('-fillpage','plots/group_sweeps','-dpdf')
 

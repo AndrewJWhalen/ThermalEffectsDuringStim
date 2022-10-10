@@ -1,5 +1,6 @@
-addpath('../classes/')
-load('../init/leak.mat')
+addpath('classes/')
+addpath('results/')
+load('init/leak.mat')
 addpath(leak.function_path)
 
 tc = 1;
@@ -22,5 +23,5 @@ p_0 = pt1(:,end);
 pt_cell_inst={pt1,pt2};
 ct_cell_inst={ct1,ct2};
 
-save('../results/instant_pump.mat','pt_cell_inst','ct_cell_inst')
+save('results/instant_pump.mat','pt_cell_inst','ct_cell_inst')
 

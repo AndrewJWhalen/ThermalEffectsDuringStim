@@ -1,5 +1,5 @@
-addpath('../classes/')
-load('../init/leak.mat')
+addpath('classes/')
+load('init/leak.mat')
 addpath(leak.function_path)
 
 
@@ -63,5 +63,5 @@ for ii = 1:3 %level
 
 end
 
-save('../results/group_par_sweep.mat','group_par_sweeps')
+save('results/group_par_sweep.mat','group_par_sweeps')
 

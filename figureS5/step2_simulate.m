@@ -1,5 +1,5 @@
-addpath('../classes/')
-load('../init/leak.mat')
+addpath('classes/')
+load('init/leak.mat')
 addpath(leak.function_path)
 
 
@@ -33,6 +33,6 @@ parfor i = 1:4
 end
 
 
-save('../results/na_l_sweep.mat','pt_cell')
+save('results/na_l_sweep.mat','pt_cell')
 
     

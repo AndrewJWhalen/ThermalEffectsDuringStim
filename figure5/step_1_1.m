@@ -1,6 +1,6 @@
-addpath('../functions/')
-addpath('../classes/')
-load('../init/init_wei.mat')
+addpath('functions/')
+addpath('classes/')
+load('init/init_wei.mat')
 Voli = 1.4368e-15; 
 Volo = Voli/7;
 
@@ -73,4 +73,4 @@ for i = 1:36
 end
 
 
-save('../init/kcc2_temp_init.mat','init_cell')
+save('init/kcc2_temp_init.mat','init_cell')

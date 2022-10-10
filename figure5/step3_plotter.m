@@ -1,4 +1,4 @@
-addpath('../graphing_functions/')
+addpath('graphing_functions/')
 
 %% This first part only works if matcont is installed
 matcontpath = '/storage/home/t/tuk158/MatCont7p1/';

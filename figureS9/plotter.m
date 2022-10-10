@@ -1,5 +1,5 @@
-load('../results/instant_pump.mat')
-profile_0 = p_list{1}(:,5*10000);
+load('results/instant_pump.mat')
+profile_0 = p0_list{1}(:,5*10000);
 xnstep = 10;
 ynstep = 10;
 
@@ -17,4 +17,4 @@ end
 
 set(figure(1),'Units','inches')
 set(figure(1),'PaperSize',[6 8])
-print(figure(1),'-fillpage','../plots/mhn_fieldmaps','-dpdf')
+print(figure(1),'-fillpage','plots/mhn_fieldmaps','-dpdf')

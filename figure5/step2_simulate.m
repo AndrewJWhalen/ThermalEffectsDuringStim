@@ -1,7 +1,7 @@
-addpath('../classes/')
-addpath('../functions/')
+addpath('classes/')
+addpath('functions/')
 
-load('../init/kcc2_temp_init.mat')
+load('init/kcc2_temp_init.mat')
 tc = 1;
 tstart = 1;
 last = 5000;
@@ -18,5 +18,5 @@ parfor k = 1:6
     end
 end
 
-save('../results/kcc2_temp_sweep_2.mat','pt_cell')
+save('results/kcc2_temp_sweep_2.mat','pt_cell')
 
